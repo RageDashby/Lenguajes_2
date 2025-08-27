@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Desktop\\Lenguajes_2\\CalculadorEmpresarial\\CalculadorEmpresarial\\CalculadorEmpresarial.csproj": {}
+    "C:\\Users\\ashby\\Desktop\\Universidad\\Semestre 5\\Lenguajes 2\\Unidad 1\\CalculadorEmpresarial\\Lenguajes_2\\CalculadorEmpresarial\\CalculadorEmpresarial\\CalculadorEmpresarial.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Desktop\\Lenguajes_2\\CalculadorEmpresarial\\CalculadorEmpresarial\\CalculadorEmpresarial.csproj": {
+    "C:\\Users\\ashby\\Desktop\\Universidad\\Semestre 5\\Lenguajes 2\\Unidad 1\\CalculadorEmpresarial\\Lenguajes_2\\CalculadorEmpresarial\\CalculadorEmpresarial\\CalculadorEmpresarial.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Desktop\\Lenguajes_2\\CalculadorEmpresarial\\CalculadorEmpresarial\\CalculadorEmpresarial.csproj",
+        "projectUniqueName": "C:\\Users\\ashby\\Desktop\\Universidad\\Semestre 5\\Lenguajes 2\\Unidad 1\\CalculadorEmpresarial\\Lenguajes_2\\CalculadorEmpresarial\\CalculadorEmpresarial\\CalculadorEmpresarial.csproj",
         "projectName": "CalculadorEmpresarial",
-        "projectPath": "C:\\Users\\HP\\Desktop\\Lenguajes_2\\CalculadorEmpresarial\\CalculadorEmpresarial\\CalculadorEmpresarial.csproj",
-        "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Desktop\\Lenguajes_2\\CalculadorEmpresarial\\CalculadorEmpresarial\\obj\\",
+        "projectPath": "C:\\Users\\ashby\\Desktop\\Universidad\\Semestre 5\\Lenguajes 2\\Unidad 1\\CalculadorEmpresarial\\Lenguajes_2\\CalculadorEmpresarial\\CalculadorEmpresarial\\CalculadorEmpresarial.csproj",
+        "packagesPath": "C:\\Users\\ashby\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ashby\\Desktop\\Universidad\\Semestre 5\\Lenguajes 2\\Unidad 1\\CalculadorEmpresarial\\Lenguajes_2\\CalculadorEmpresarial\\CalculadorEmpresarial\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ashby\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

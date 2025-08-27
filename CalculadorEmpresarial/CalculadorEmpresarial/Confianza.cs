@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CalculadorEmpresarial
 {
-    public class Operador : Empleado
+    public class Confianza : Empleado
     {
         public double SueldoBase { get; set; }
         public string Nombre { get; set; }
@@ -14,23 +14,21 @@ namespace CalculadorEmpresarial
         public bool Asistencia { get; set; }
         public int DiasTrabajados { get; set; }
 
-        private const int PAGO_HORA = 25;
-        private const int HORAS_DIARIAS = 9;
+        private const int SUELDO_DIARIO = 1100;
 
-        public Operador(string nombre, int diasTrabajados, bool puntualidad, bool asistencia)
+        public Confianza(string nombre, int diasTrabajados, bool asistencia)
         {
             Nombre = nombre;
             DiasTrabajados = diasTrabajados;
-            Puntualidad = puntualidad;
             Asistencia = asistencia;
-            SueldoBase = DiasTrabajados * HORAS_DIARIAS * PAGO_HORA;
+            Puntualidad = true; // No aplica, pero se establece por la interfaz
+            SueldoBase = DiasTrabajados * SUELDO_DIARIO;
         }
 
         public float CalcularPago()
         {
-            double bonoPuntualidad = Puntualidad ? 400 : 0;
-            double bonoAsistencia = Asistencia ? 300 : 0;
-            double totalBruto = SueldoBase + bonoPuntualidad + bonoAsistencia;
+            double bonoAsistencia = Asistencia ? 400 : 0;
+            double totalBruto = SueldoBase + bonoAsistencia;
             double isr = totalBruto * 0.30;
             double ispt = totalBruto * 0.18;
             double totalNeto = totalBruto - (isr + ispt);

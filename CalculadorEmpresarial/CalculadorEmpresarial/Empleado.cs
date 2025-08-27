@@ -8,12 +8,11 @@ namespace CalculadorEmpresarial
 {
     public interface Empleado
     {
-        double SueldoBase {  get; set; }
-        Boolean Bono {  get; set; }
+        double SueldoBase { get; set; }
+        string Nombre { get; set; }
+        bool Puntualidad { get; set; }
+        bool Asistencia { get; set; }
         int DiasTrabajados { get; set; }
-        
-
-
-    
+        float CalcularPago();
     }
 }
