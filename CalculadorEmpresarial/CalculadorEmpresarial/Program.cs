@@ -11,6 +11,10 @@
             bool salir = false;
             while (!salir)
             {
+                Console.Clear();
+                Console.WriteLine("-----------------------");
+                Console.WriteLine("Calculador Empresarial");
+                Console.WriteLine("-----------------------");
                 Console.WriteLine("1. Registrar empleado");
                 Console.WriteLine("2. Registrar factura");
                 Console.WriteLine("3. Mostrar reporte");
@@ -41,9 +45,10 @@
 
         static void RegistrarEmpleado()
         {
-            Console.Write("Tipo de empleado (1: Operador, 2: Técnico, 3: Confianza): ");
+            Console.WriteLine("-----------------------");
+            Console.Write("Ingrese el Tipo de empleado (1: Operador, 2: Técnico, 3: Confianza): ");
             string tipo = Console.ReadLine();
-            Console.Write("Nombre: ");
+            Console.Write("Nombre del empleado : ");
             string nombre = Console.ReadLine();
             Console.Write("Días trabajados (0-5): ");
             int diasTrabajados = int.Parse(Console.ReadLine());
@@ -54,6 +59,7 @@
                 bool puntualidad = Console.ReadLine().ToLower() == "sí";
                 Console.Write("¿Tuvo asistencia perfecta? (sí/no): ");
                 bool asistencia = Console.ReadLine().ToLower() == "sí";
+                Console.WriteLine("-----------------------");
 
                 if (tipo == "1")
                     empleados.Add(new Operador(nombre, diasTrabajados, puntualidad, asistencia));
@@ -65,15 +71,18 @@
                 Console.Write("¿Tuvo asistencia perfecta? (sí/no): ");
                 bool asistencia = Console.ReadLine().ToLower() == "sí";
                 empleados.Add(new Confianza(nombre, diasTrabajados, asistencia));
+                Console.WriteLine("-----------------------");
             }
             else
             {
                 Console.WriteLine("Tipo no válido.");
+                Console.WriteLine("-----------------------");
             }
         }
 
         static void RegistrarFactura()
         {
+            Console.WriteLine("-----------------------");
             Console.Write("Tipo de factura (1: Producto, 2: Servicio): ");
             string tipo = Console.ReadLine();
 
@@ -90,6 +99,7 @@
                 double precio = double.Parse(Console.ReadLine());
                 factura.ObtenerFactura(numero, descripcion, cantidad, precio);
                 facturasProductos.Add(factura);
+                Console.WriteLine("-----------------------");
             }
             else if (tipo == "2")
             {
@@ -100,10 +110,12 @@
                 double precio = double.Parse(Console.ReadLine());
                 factura.ObtenerFactura(descripcion, precio);
                 facturasServicios.Add(factura);
+                Console.WriteLine("-----------------------");
             }
             else
             {
-                Console.WriteLine("Tipo no válido.");
+                Console.WriteLine("Tipo de factura no especificado.");
+                Console.WriteLine("-----------------------");
             }
         }
 
@@ -142,6 +154,7 @@
             Console.WriteLine($"Total sueldos: {totalSueldos}");
             Console.WriteLine($"Total facturas: {totalFacturas}");
             Console.WriteLine($"Total general: {totalGeneral}");
+            Console.ReadKey();
         }
     }
 }
